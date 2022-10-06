@@ -36,7 +36,6 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
-    battleLog.push(logEntry);
   } else if (event === LOG_EVENT_PLAYER_STRONG_ATTACK) {
     logEntry = {
       event: event,
@@ -45,7 +44,6 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
-    battleLog.push(logEntry);
   } else if (event === LOG_EVENT_MONSTER_ATTACK) {
     logEntry = {
       event: event,
@@ -54,7 +52,6 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
-    battleLog.push(logEntry);
   } else if (event === LOG_EVENT_PLAYER_HEAL) {
     logEntry = {
       event: event,
@@ -63,7 +60,6 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
-    battleLog.push(logEntry);
   } else if (event === LOG_EVENT_GAME_OVER) {
     logEntry = {
       event: event,
@@ -71,10 +67,10 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
-    battleLog.push(logEntry);
   } else {
     logEntry = {};
   }
+  battleLog.push(logEntry);
 }
 
 function reset(){
