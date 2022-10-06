@@ -32,6 +32,7 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
     logEntry = {
       event: event,
       value: value,
+      target: 'MONSTER',
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
@@ -39,6 +40,7 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
     logEntry = {
       event: event,
       value: value,
+      target: 'MONSTER',
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
@@ -46,6 +48,7 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
     logEntry = {
       event: event,
       value: value,
+      target: 'PLAYER',
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
@@ -53,6 +56,7 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
     logEntry = {
       event: event,
       value: value,
+      target: 'PLAYER',
       finalMonsterHealth: monsterHealth,
       finalPlayerHealth: playerHealth
     };
