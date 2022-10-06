@@ -13,7 +13,7 @@ adjustHealthBars(chosenMaxLife);
 function reset(){
   currentPlayerHealth = chosenMaxLife;
   currentMonsterHealth = chosenMaxLife;
-  resetGame();
+  resetGame(chosenMaxLife);
 }
 
 function endRound() {
