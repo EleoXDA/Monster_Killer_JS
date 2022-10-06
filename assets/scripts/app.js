@@ -1,2 +1,2 @@
-const attackValue = 10;
+const ATTACK_VALUE = 10;
 let chosenMaxLife = 100;
