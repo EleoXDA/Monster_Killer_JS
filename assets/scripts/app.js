@@ -7,6 +7,14 @@ let currentMonsterHealth = chosenMaxLife;
 
 adjustHealthBars(chosenMaxLife);
 
+function attackMonster(mode){
+  if (mode === 'ATTACK'){
+    maxDamage = ATTACK_VALUE;
+  } else if (mode === 'STRONG_ATTACK'){
+    maxDamage = STRONG_ATTACK_VALUE;
+  }
+}
+
 function attackHandler() {
   const damage = dealMonsterDamage(ATTACK_VALUE);
   currentMonsterHealth -= damage;
