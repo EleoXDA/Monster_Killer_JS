@@ -43,6 +43,7 @@ function strongAttackHandler() {
 
 function healPlayerHandler() {
   increasePlayerHealth(HEAL_VALUE);
+  currentPlayerHealth += HEAL_VALUE;
   endRound();
 }
 
