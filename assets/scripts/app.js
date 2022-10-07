@@ -178,7 +178,7 @@ function printLogHandler() {
   for (let i = battleLog.length; i > 0; i--) {
     console.log(i);
   }
-  console.log(battleLog);
+  // console.log(battleLog);
 }
 
 attackBtn.addEventListener("click", attackHandler);
