@@ -172,8 +172,13 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
-  for (let i = 0; i < battleLog.length; i++){
-    console.log('======')
+  // for (let i = 0; i < battleLog.length; i++){
+  //   console.log('======')
+  // }
+  let x = 0;
+  while (x < 3) {
+    console.log('======');
+    x++;
   }
   let i = 0;
   for (const logEntry of battleLog) {
