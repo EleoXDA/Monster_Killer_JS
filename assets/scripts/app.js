@@ -179,7 +179,7 @@ function printLogHandler() {
   for (const i of battleLog) {
     console.log(`${i}`)
     for (const x in i) {
-      console.log(`${x} => {i[x]}`);
+      console.log(`${x} => ${i[x]}`);
     }
     i++
   } // disadvantage is you dont get access to index number - you need to set it manually before, and increment at each loop
