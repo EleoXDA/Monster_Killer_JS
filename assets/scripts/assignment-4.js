@@ -25,3 +25,14 @@ while (counter < arrayOfNumbers.length) {
   counter++
 }
 
+//assignment #3
+// first way
+for (let i = arrayOfNumbers.length-1; i < 0; i++){
+  console.log(arrayOfNumbers[i]);
+}
+//second way
+let counter2 = arrayOfNumbers.length
+while (counter > 0) {
+  console.log(arrayOfNumbers[counter]);
+  counter--
+}
