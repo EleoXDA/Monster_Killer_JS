@@ -178,7 +178,7 @@ function printLogHandler() {
   for (const i of battleLog) {
     console.log(i)
   } // disadvantage is you dont get access to index number - you need to set it manually before, and increment at each loop
-  console.log(battleLog);
+  // console.log(battleLog);
 }
 
 attackBtn.addEventListener("click", attackHandler);
