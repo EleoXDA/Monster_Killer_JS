@@ -185,6 +185,7 @@ function printLogHandler() {
     console.log('Outer', y);
     innerFor: for  (let z = 0; z < 5; z++) {
       if (z === 3) {
+        break outerWhile;
       }
       console.log('Inner', z);
     }
