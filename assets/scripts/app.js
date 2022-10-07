@@ -176,10 +176,10 @@ function printLogHandler() {
     console.log('======')
   }
   let i = 0;
-  for (const i of battleLog) {
-    console.log(`${i}`)
-    for (const x in i) {
-      console.log(`${x} => ${i[x]}`);
+  for (const logEntry of battleLog) {
+    console.log(`${logEntry}`)
+    for (const key in logEntry) {
+      console.log(`${key} => ${logEntry[key]}`);
     }
     i++
   } // disadvantage is you dont get access to index number - you need to set it manually before, and increment at each loop
