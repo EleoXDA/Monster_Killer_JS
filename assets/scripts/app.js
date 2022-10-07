@@ -175,32 +175,32 @@ function printLogHandler() {
   // for (let i = 0; i < battleLog.length; i++){
   //   console.log('======')
   // }
-  let x = 0;
+  // let x = 0;
   // while (x < 3) {
   //   console.log(x);
   //   x++;
   // }
-  let y = 0;
-  outerWhile: do {
-    console.log('Outer', y);
-    innerFor: for  (let z = 0; z < 5; z++) {
-      if (z === 3) {
-        break outerWhile;
-      }
-      console.log('Inner', z);
-    }
-    y++;
-  } while (y < 3);
+  // let y = 0;
+  // outerWhile: do {
+  //   console.log('Outer', y);
+  //   innerFor: for  (let z = 0; z < 5; z++) {
+  //     if (z === 3) {
+  //       break outerWhile;
+  //     }
+  //     console.log('Inner', z);
+  //   }
+  //   y++;
+  // } while (y < 3);
   
-  let i = 0;
-  for (const logEntry of battleLog) {
-    console.log(`${i}`)
-    for (const key in logEntry) {
-      console.log(`${key} => ${logEntry[key]}`);
-    }
-    i++
-  } // disadvantage is you dont get access to index number - you need to set it manually before, and increment at each loop
-  // console.log(battleLog);
+  // let i = 0;
+  // for (const logEntry of battleLog) {
+  //   console.log(`${i}`)
+  //   for (const key in logEntry) {
+  //     console.log(`${key} => ${logEntry[key]}`);
+  //   }
+  //   i++
+  // } // disadvantage is you dont get access to index number - you need to set it manually before, and increment at each loop
+  console.log(battleLog);
 }
 
 attackBtn.addEventListener("click", attackHandler);
