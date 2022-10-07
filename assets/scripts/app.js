@@ -180,10 +180,16 @@ function printLogHandler() {
   //   console.log(x);
   //   x++;
   // }
-  do {
-    console.log('======');
-    x++;
-  } while (x < 3);
+  let y = 0;
+  outerWhile: do {
+    console.log('Outer', y);
+    innerFor: for  (let z = 0; z < 5; z++) {
+      if (z === 3) {
+      }
+      console.log('Inner', z);
+    }
+    y++;
+  } while (y < 3);
   
   let i = 0;
   for (const logEntry of battleLog) {
