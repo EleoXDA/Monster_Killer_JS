@@ -176,10 +176,15 @@ function printLogHandler() {
   //   console.log('======')
   // }
   let x = 0;
-  while (x < 3) {
+  // while (x < 3) {
+  //   console.log(x);
+  //   x++;
+  // }
+  do {
     console.log('======');
     x++;
-  }
+  } while (x < 3);
+  
   let i = 0;
   for (const logEntry of battleLog) {
     console.log(`${i}`)
