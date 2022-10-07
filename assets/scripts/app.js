@@ -175,8 +175,14 @@ function printLogHandler() {
   for (let i = 0; i < battleLog.length; i++){
     console.log('======')
   }
+  let i = 0;
   for (const i of battleLog) {
-    console.log(i)
+    console.log(`${i}`)
+    for (const x in i) {
+      console.log(x);
+      console.log(i[x])
+    }
+    i++
   } // disadvantage is you dont get access to index number - you need to set it manually before, and increment at each loop
   // console.log(battleLog);
 }
