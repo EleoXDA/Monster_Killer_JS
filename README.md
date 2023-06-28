@@ -1,6 +1,8 @@
 # Monster Killer
 
 This project is a simple game called Monster Killer implemented with HTML, CSS, and JavaScript. The game allows the player to fight against a monster by attacking, using strong attacks, and healing.
+![image](https://github.com/EleoXDA/Monster_Killer_JS/assets/27622683/07a94a75-14a4-4457-9f26-ca2f479de880)
+
 
 ## Files
 
